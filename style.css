@@ -7,10 +7,36 @@ body{
     width: 40px;
     height: auto;
     padding-left: 10px;
+    flex-grow: 1;
 }
-.header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+nav{
+    display: grid;
+    grid-template-columns: 200px auto 170px;
     border-bottom: 1px solid gray;
+}
+.nav-right{
+    display: flex;
+    gap: 1em;
+
+}
+.ceneter-bar{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+
+}
+.material-icons{
+    cursor: pointer;
+    color: gray;
+}
+span{
+    cursor: pointer;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background-color: gray;
 }
