@@ -17,17 +17,24 @@ nav{
 .nav-right{
     display: flex;
     gap: 1em;
+    justify-content: right;
+    padding-right: 10px;
+    align-items: center;
 
 }
 .ceneter-bar{
     display: flex;
-    gap: 1em;
     align-items: center;
-
+    justify-content: center;
 }
 .material-icons{
     cursor: pointer;
     color: gray;
+}
+.material-icons:hover{
+    background-color: rgb(237, 96, 96);
+    border-radius: 20px;
+    padding: 2px;
 }
 span{
     cursor: pointer;
@@ -36,7 +43,12 @@ span{
 a{
     text-decoration: none;
     color: black;
+    padding-left:20px;
+    padding-right: 20px;
 }
 a:hover{
-    background-color: gray;
+    text-decoration:underline solid red;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgb(175, 71, 71);
 }
