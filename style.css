@@ -30,6 +30,7 @@ nav{
 .material-icons{
     cursor: pointer;
     color: gray;
+    border-radius: 10px solid gray;
 }
 .material-icons:hover{
     background-color: rgb(237, 96, 96);
@@ -52,3 +53,26 @@ a:hover{
     padding-bottom: 7px;
     background-color: rgb(175, 71, 71);
 }
+main{
+    margin-top: 2em;
+    display: grid;
+    gap: 1em;
+    grid-template-rows: 200px auto auto 150px;
+    grid-template-columns: auto auto;
+    background-color: gray;
+}
+.top-main{
+    grid-column: 1 /span 2;
+    background-color: gray;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: relative;
+}
+.shoes-main-top{
+    width: 100%;
+    flex-wrap: wrap;
+    height: 50vh
+}
+
