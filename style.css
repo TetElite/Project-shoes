@@ -2,16 +2,17 @@ body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
+    background-image: linear-gradient(to right ,rgb(41, 62, 147),rgb(129, 31, 215),rgb(10, 164, 113));
 }
 .img-header{
-    width: 40px;
-    height: auto;
+    width: 50px;
+    height: 40px;
     padding-left: 10px;
-    flex-grow: 1;
 }
 nav{
     display: grid;
-    grid-template-columns: 200px auto 170px;
+    grid-template-columns: auto auto auto;
+    height: 49px;
     border-bottom: 1px solid gray;
 }
 .nav-right{
@@ -20,26 +21,26 @@ nav{
     justify-content: right;
     padding-right: 10px;
     align-items: center;
-
 }
 .ceneter-bar{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.nav-left{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
 .material-icons{
     cursor: pointer;
-    color: gray;
-    border-radius: 10px solid gray;
 }
 .material-icons:hover{
-    background-color: rgb(237, 96, 96);
     border-radius: 20px;
     padding: 2px;
 }
 span{
     cursor: pointer;
-
 }
 a{
     text-decoration: none;
@@ -48,10 +49,10 @@ a{
     padding-right: 20px;
 }
 a:hover{
-    text-decoration:underline solid red;
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color: rgb(175, 71, 71);
+    text-decoration: underline solid gray;
+    background-color: blueviolet;
 }
 main{
     margin-top: 2em;
@@ -59,20 +60,20 @@ main{
     gap: 1em;
     grid-template-rows: 200px auto auto 150px;
     grid-template-columns: auto auto;
-    background-color: gray;
 }
-.top-main{
+.center-main{
     grid-column: 1 /span 2;
-    background-color: gray;
     display: flex;
     gap: 1em;
     flex-wrap: wrap;
-    padding: 10px;
-    position: relative;
 }
-.shoes-main-top{
-    width: 100%;
-    flex-wrap: wrap;
-    height: 50vh
+.top-main{
+    display: flex;
+    gap: 1em;
+    justify-content: space-evenly;
+    flex-direction: column;    
+}
+.shoes-main-top-img{
+    position: fixed;
 }
 
