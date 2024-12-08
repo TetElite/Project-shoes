@@ -2,7 +2,7 @@ body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
-    background-image: linear-gradient(to right ,rgb(41, 62, 147),rgb(129, 31, 215),rgb(10, 164, 113));
+    background-image: linear-gradient(rgb(41, 62, 147),rgb(219, 193, 99),rgb(41, 62, 147));
 }
 .img-header{
     width: 50px;
@@ -12,7 +12,7 @@ body{
 nav{
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 49px;
+    height: 60px;
     border-bottom: 1px solid gray;
 }
 .nav-right{
@@ -44,13 +44,13 @@ span{
 }
 a{
     text-decoration: none;
-    color: black;
     padding-left:20px;
     padding-right: 20px;
+    color:azure;
 }
 a:hover{
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-decoration: underline solid gray;
     background-color: blueviolet;
 }
@@ -58,22 +58,34 @@ main{
     margin-top: 2em;
     display: grid;
     gap: 1em;
-    grid-template-rows: 200px auto auto 150px;
+    grid-template-rows: 250px auto auto 150px;
     grid-template-columns: auto auto;
 }
 .center-main{
-    grid-column: 1 /span 2;
     display: flex;
     gap: 1em;
     flex-wrap: wrap;
 }
 .top-main{
+    grid-column: 1/span 2;
     display: flex;
-    gap: 1em;
-    justify-content: space-evenly;
-    flex-direction: column;    
+    gap: 1em;   
+    border-radius: 10px;
+    flex-direction: column;
+    border: 1px solid gray;
+    justify-content: center;
+    padding: 20px;
+
 }
 .shoes-main-top-img{
-    position: fixed;
+    height: 100px;
+    border-radius: 10px;
+    flex-wrap: wrap;
 }
-
+.buttom-promotion{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid blue;
+    width: 100px;
+    background-image: linear-gradient(to right ,rgb(169, 207, 55),rgb(230, 155, 79),rgb(224, 99, 166));
+}
