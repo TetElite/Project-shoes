@@ -2,7 +2,10 @@ body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
-    background-image: url(image copy.png);
+    background-color: black;
+    color: aliceblue;
+    background-image: radial-gradient(rgb(139, 131, 131), rgb(83, 85, 83), rgb(12, 12, 16));
+
 }
 .material-icons {
     font-family: 'Material Icons';
@@ -18,10 +21,11 @@ body{
     direction: ltr;
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
-  }
+}
 .material-icons:hover{
     border-radius: 20px;
-    transform: scale(1.5);
+    transform: scale(1.2);
+    color: aliceblue;
 }
 
 .img-header{
@@ -31,38 +35,32 @@ body{
 }
 nav{
     display: grid;
-    grid-template-columns: auto auto auto;
-    height: 60px;
-    border-bottom: 1px solid gray;
+    grid-template-columns: auto auto;
+    grid-template-rows: 40px;
+    border-bottom: 1px solid rgb(208, 205, 205);
 }
 .nav-right{
     display: flex;
     gap: 1em;
-    justify-content: right;
     padding-right: 10px;
+    justify-content: right;
     align-items: center;
-}
-.ceneter-bar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .nav-left{
     display: flex;
     align-items: center;
     padding-left: 10px;
-
 }
-
 main{
-    margin-top: 2em;
     display: grid;
     gap: 1em;
     grid-template-rows: 250px auto auto 150px;
     grid-template-columns: auto auto;
 }
-
-
+.background-image{
+    position: relative;
+    flex-wrap: wrap;
+}
 .buttom-promotion{
     position: absolute;
     border-radius: 5px;
