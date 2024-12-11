@@ -1,11 +1,9 @@
-.search-mid{
-    margin-top: 100px;
+.search-page{
+    display: flex;
+    flex-direction: column;
 }
-.search-mid hr{
-    width: auto;
-}
-#search-bar{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    border: 100px;
-    border-radius: 1px;
+.search-bottom input{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
 }
