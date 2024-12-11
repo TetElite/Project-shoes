@@ -16,24 +16,12 @@ body {
 }
 
 .form-container h1 {
-  margin-bottom: 10px;
-}
-
-.form-container p {
   margin-bottom: 20px;
 }
 
 .form-container form {
   display: flex;
   flex-direction: column;
-}
-
-.form-container input {
-  margin-bottom: 10px;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
 }
 
 .form-container a {
@@ -45,6 +33,22 @@ body {
 
 .form-container a:hover {
   text-decoration: underline;
+}
+
+.form-container input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container input[type="checkbox"] {
+  width: auto;
+}
+
+.form-container label {
+  margin-bottom: 10px;
 }
 
 .form-container button {
@@ -60,6 +64,7 @@ body {
 .form-container button:hover {
   background-color: #0056b3;
 }
+
 
 .form-container .separator {
   display: flex;
@@ -92,14 +97,9 @@ body {
 .photo-container .back-link {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 51%;
   font-size: 14px;
   color: #007bff;
   text-decoration: none;
-}
-
-.photo-container p {
-  font-size: 18px;
-  color: #666;
 }
 
