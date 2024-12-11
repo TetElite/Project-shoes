@@ -1,0 +1,9 @@
+.search-page{
+    display: flex;
+    flex-direction: column;
+}
+.search-bottom input{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
