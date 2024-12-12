@@ -6,4 +6,32 @@
     width: 200px;
     height: 30px;
     border-radius: 10px;
+    margin-top: 50px;
+}
+material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+.material-icons:hover{
+    border-radius: 20px;
+    transform: scale(1.2);
+    color: aliceblue;
+}
+.nav-right{
+display: flex;
+gap: 1em;
+padding-right: 10px;
+justify-content: right;
+align-items: center;
 }
