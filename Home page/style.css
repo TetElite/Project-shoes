@@ -54,12 +54,18 @@ nav{
 main{
     display: grid;
     gap: 1em;
-    grid-template-rows: 250px auto auto 150px;
+    grid-template-rows: 60vh 150px 150px 150px;
     grid-template-columns: auto auto;
 }
-.background-image{
+.promotion-ads{
+    grid-column: 1/3;
+    justify-content: right;
+    background-color: antiquewhite;
     position: relative;
-    flex-wrap: wrap;
+}
+.background-image-promotion{
+    width: 100%;
+    height: 60vh;
 }
 .buttom-promotion{
     position: absolute;
@@ -67,5 +73,40 @@ main{
     padding: 10px;
     border: 1px solid blue;
     width: 100px;
+    cursor: pointer;
     background-image: linear-gradient(to right ,rgb(169, 207, 55),rgb(230, 155, 79),rgb(224, 99, 166));
+}
+.buttom-promotion:hover{
+    transform: scale(1.1);
+    background-image: linear-gradient(to right ,rgb(145, 115, 31),rgb(230, 155, 79),rgb(103, 86, 95));
+
+}
+.buttom-promotion-1{
+    top:350px;
+    right: 200px;
+}
+.main-content{
+    
+}
+.fashion-shose{
+    grid-row: 2/3;
+    flex-wrap: wrap;
+    height: 300px;
+}
+.sport-shoes{
+    grid-column: 2;
+    grid-row: 2;
+    height: 150px;
+}
+.stylish-shoes{
+    grid-column: 2;
+    grid-row: 3;
+    height: 150px
+}
+.promotion-button{
+    grid-row: 4;
+    grid-column: 1/2;
+}
+footer{
+
 }
