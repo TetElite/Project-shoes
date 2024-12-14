@@ -1,6 +1,7 @@
 body{
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
     padding: 0px;
     background-color: black;
     color: aliceblue;
@@ -54,13 +55,36 @@ nav{
 main{
     display: grid;
     gap: 1em;
-    grid-template-rows: 60vh 150px 150px 150px;
+    grid-template-rows: 60vh 150px 150px 40vh;
     grid-template-columns: auto auto;
+    background-color: rgb(74, 88, 83);
 }
+
+
+
+.testing{
+    border-radius: 10px;
+    border: 1px solid rebeccapurple;
+    border: 1px solid black;
+}
+.a{
+    grid-column: 1/3;
+}
+.b{
+    grid-row: 2/4;
+}
+.e{
+    grid-column: 1/3;
+}
+
+
+
+
+
 .promotion-ads{
     grid-column: 1/3;
     justify-content: right;
-    background-color: antiquewhite;
+    background-color: rgb(36, 186, 116);
     position: relative;
 }
 .background-image-promotion{
@@ -89,24 +113,45 @@ main{
     
 }
 .fashion-shose{
-    grid-row: 2/3;
+    grid-row: 2/4;
     flex-wrap: wrap;
     height: 300px;
 }
 .sport-shoes{
-    grid-column: 2;
-    grid-row: 2;
     height: 150px;
 }
 .stylish-shoes{
-    grid-column: 2;
-    grid-row: 3;
-    height: 150px
+    height: 150px;
 }
-.promotion-button{
+.promotion-buttom{
     grid-row: 4;
-    grid-column: 1/2;
+    grid-column: 1/3;
+    height: 40vh;
+    width: 100%;
 }
 footer{
-
+    display: flex;
+    gap: 1em;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(17, 40, 76);
 }
+.item{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    width: 200px;
+}
+.para-footer{
+    color: white;
+    cursor: pointer;
+}
+.item-2{
+    color: #a41d1d;
+}
+@media screen and (min-width: 601px) {
+    main{
+      grid-template-columns: auto;
+    }
+  }
+   
