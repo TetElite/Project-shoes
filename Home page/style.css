@@ -12,7 +12,7 @@ body{
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1;
     letter-spacing: normal;
     text-transform: none;
@@ -24,7 +24,6 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 .material-icons:hover{
-    border-radius: 20px;
     transform: scale(1.2);
     color: aliceblue;
 }
@@ -38,7 +37,7 @@ nav{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 40px;
-    border-bottom: 1px solid rgb(208, 205, 205);
+    border-bottom: 2px solid rgb(208, 205, 205);
 }
 .nav-right{
     display: flex;
@@ -150,8 +149,7 @@ footer{
     color: #a41d1d;
 }
 @media screen and (min-width: 601px) {
-    main{
-      grid-template-columns: auto;
-    }
-  }
-   
+    main{ 
+        grid-template-columns: auto;
+        }
+}
