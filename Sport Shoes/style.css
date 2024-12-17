@@ -1,5 +1,8 @@
 
-
+.Sport-div{
+    display: flex;
+    flex-direction: column;
+}
 .nav-right a{
     text-decoration: none;
     color: inherit;
@@ -42,4 +45,36 @@ nav{
     display: flex;
     align-items: center;
     padding-left: 10px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #213a58;
+    font-family: 'Roboto', sans-serif;  /* Apply the new font */
+}
+.item {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    width: 200px;
+}
+.item h2 {
+    font-weight: 500;  /* Bold title for the footer sections */
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.para-footer {
+    color: #ffffff;
+    font-weight: 400; 
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.para-footer:hover {
+    color: #9500ff;  /* Attractive color change on hover */
 }
