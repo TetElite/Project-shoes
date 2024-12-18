@@ -1,15 +1,46 @@
-<div class="main-content">
-    <a href="http://#">
-        <img  class="fashion-shose" src="/Home page/main-pic/fashion shoese.png" alt="">
-    </a>
-</div>
-<div class="sport-shose">
-    <a href="http://#">
-        <img class="sport-shoes" src="/Home page/main-pic/sport shose.png" alt="">
-    </a>
-</div> 
-<div class="stylish-shoes">
-    <a href="http://#">
-        <img class="stylish-shoes" src="/Home page/main-pic/stylish shoes.png" alt="">
-    </a>
-</div>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-test.css">
+</head>
+<body>
+    <section class="container">
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img id="slide-1" src="/Home page/main-pic/head-poster-promotion.jpg" alt="3D rendering of an imaginary orange planet in space" />
+            <img id="slide-2" src="https://images.unsplash.com/photo-1657586640569-4a3d4577328c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="3D rendering of an imaginary green planet in space" />
+            <img id="slide-3" src="https://images.unsplash.com/photo-1656077217715-bdaeb06bd01f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="3D rendering of an imaginary blue planet in space" />
+          </div>
+          <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+          </div>
+        </div>
+      </section>
+      <script>
+        const slides = document.querySelectorAll(".slider img");
+        let currentIndex = 0;
+
+        function autoSlide() {
+            // Remove active class from the current slide
+            slides[currentIndex].classList.remove("active");
+
+            // Update to the next slide index
+            currentIndex = (currentIndex + 1) % slides.length;
+
+            // Add active class to the next slide
+            slides[currentIndex].classList.add("active");
+        }
+
+        // Run the autoSlide function every second
+        setInterval(autoSlide, 1000);
+
+        // Initialize the first slide as active
+        slides[currentIndex].classList.add("active");
+    </script>
+</body>
+</html>
