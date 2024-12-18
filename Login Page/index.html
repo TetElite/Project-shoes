@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoes Productive</title>
-    <link rel="shortcut icon" href="photo/running-shoe.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form | Dan Aleko</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="photo-container">
-        <a href="http://127.0.0.1:5501/Home%20page/index.html" class="back-link">← Back to home</a>
-        <p>Shoes Photo</p>
-    </div>
-    <div class="form-container">
-        <h1>Welcome to our shoes store</h1>
-        <p>Sign into your account</p>
-        <form>
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <div style="display: flex; justify-content: space-between;">
-                <a href="#">Forgot password</a>
-                <a href="http://127.0.0.1:5501/Login%20Page/Sign%20up%20page/index.html">Sign up</a>
-            </div>
-            <button type="submit">Log in</button>
-        </form>
-        <div class="separator">or Login with</div>
-        <button style="background-color: white; border: 1px solid #ccc; color: black;">
-            <img src="photo/7123025_logo_google_g_icon.svg" alt="Google" style="width: 20px; vertical-align: middle; margin-right: 10px;"> Google
-        </button>
-    </div>
-    <p>hi hello there</p>
+  <a href="index.html" class="home-icon">
+    <i class="fa-solid fa-house"></i>
+  </a>  
+  <div><h2>Welcome to our shoes store please
+    Login into your account</h2></div>
+  <div class="wrapper">
+    <form action="">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox" required>Term of services</label>
+        <a href="#">Forgot Password</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="register-link">
+        <p>Or Log in with </p>
+      </div>
+      <button class="btn"><i class="fa-brands fa-google"></i> Google</button>
+      <div class="register-link">
+        <p>Dont have an account? <a href="#">Register</a></p>
+      </div>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
