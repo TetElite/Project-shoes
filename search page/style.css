@@ -1,78 +1,85 @@
-body{
+body {
     margin: 0px;
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
     padding: 0px;
-    background-color: #F2DDDC;
-    color: #C8A8E9
+    background-color: #ffffff;
+    color: #121213;
 }
-.search-page{
+
+.search-page {
     display: flex;
     flex-direction: column;
 }
+
 .search-bottom {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Align input to the left */
     align-items: center;
-    margin: 20px 0;
+    margin: 5px 0; /* Reduced margin */
+    position: relative;
 }
+
+.search-bottom-container {
+    position: relative; /* Make it relative for absolute positioning of the icon */
+}
+
 .search-bottom input {
-    width: 450px;
-    height: 40px; 
-    border-radius: 10px;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0; 
-    caret-color: rgb(176, 18, 110);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border: 1px solid #ddd; 
-    padding: 5px 10px;
-}
-.search-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    position: relative; 
-}
-.search-bottom input {
-    width: 450px;
+    width: 440px;
     height: 40px;
     border-radius: 10px;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-    caret-color: rgb(176, 18, 110);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
+    margin: 0; /* Remove default margin */
+    caret-color: rgb(32, 22, 28);
+    box-shadow: 5px 3px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d5cdcd;
     padding: 5px 10px;
+    padding-left: 40px; /* Make space for the icon */
     transition: all 0.3s ease;
 }
+
+.search-bottom i.material-icons {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Center the icon vertically */
+    font-size: 20px;
+    color: #999;
+}
+
 .dropdown {
     position: absolute;
     top: 50px;
     left: 0;
-    width: 100%;
+    width: 490px;
     display: none;
-    background-color: #fff;
+    background-color: #efe7e7;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 10;
+    color: black;
 }
+
 .dropdown-item {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e1d7d9;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.dropdown-item:hover{
-    background-color: #f2f2f2;
+.dropdown-item:hover {
+    background-color: #71717c;
+    border-radius: 10px;
 }
+
 .search-bottom input:focus + .dropdown,
 .search-bottom:hover .dropdown {
     display: block;
+}
+.search-bottom{
+    display: flex
 }
 .material-icons {
     font-family: 'Material Icons';
@@ -90,29 +97,35 @@ body{
     -webkit-font-smoothing: antialiased;
     cursor: pointer;
 }
-.material-icons:hover{
+
+.material-icons:hover {
     transform: scale(1.4);
-    color: aliceblue;
+    color: rgb(55, 60, 64);
 }
-.nav-right{
-display: flex;
-gap: 2em;
-padding-right: 10px;
-justify-content: right;
-align-items: center;
+
+.nav-right {
+    display: flex;
+    gap: 2em;
+    padding-right: 10px;
+    justify-content: right;
+    align-items: center;
 }
-nav{
+
+nav {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 40px;
-    border-bottom: 4px solid #F4E7FB;
+    border-bottom: 1px solid #e8e1e8;
 }
-.nav-left{
+
+.nav-left {
     display: flex;
     align-items: center;
     padding-left: 10px;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 footer {
     position: fixed;
     bottom: 0;
@@ -123,29 +136,50 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #C3C7F4;
-    font-family: 'Roboto', sans-serif;  /* Apply the new font */
+    font-family: 'Roboto', sans-serif;
 }
+
 .item {
     display: flex;
     gap: 1em;
     flex-direction: column;
     width: 200px;
 }
+
 .item h2 {
-    font-weight: 500;  /* Bold title for the footer sections */
+    font-weight: 500;
     color: #1a1717;
     margin-bottom: 10px;
 }
+
 .para-footer {
     color: #333;
-    font-weight: 400; 
+    font-weight: 400;
     cursor: pointer;
     transition: color 0.3s;
 }
+
 .para-footer:hover {
-    color: #801cc8;  /* Attractive color change on hover */
+    color: #801cc8;
 }
+
+/* Adjusting spacing for screens wider than 601px */
 @media screen and (min-width: 601px) {
-    main{   grid-template-columns: auto;
-    } 
+    main {
+        grid-template-columns: auto;
+    }
+}
+.container-of-shoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1em;
+}
+.box{
+    background-color: #dbdbe2;
+    border: 1px solid #b3abab;
+}
+.container-of-shoes{
+    display: flex ;
+    flex-wrap: wrap;
 }

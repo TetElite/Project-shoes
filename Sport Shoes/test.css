@@ -32,17 +32,38 @@ nav {
     color: #00e676;
 }
 
-/* Slider Section */
-.container {
-    padding: 2rem;
-    width: 50%;
+/* Main Flex Container */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;  /* Take full viewport height */
+    box-sizing: border-box; /* Make sure padding is included in the width */
 }
 
+/* Slider Section */
+.container {
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Text Section */
+.text-container {
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Slider Styling */
 .slider-wrapper {
     position: relative;
     max-width: 48rem;
     margin: 0 auto;
-    
 }
 
 .slider {
@@ -89,15 +110,10 @@ nav {
     opacity: 1;
 }
 
-.text-container{
-    padding: 2rem;
-    width: 50%;
-}
-
 /* Footer Styling */
 footer {
     display: flex;
-    justify-content: space-between; /* Space evenly */
+    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     background-color: #0d1b2a;
@@ -127,4 +143,14 @@ footer {
 
 .para-footer:hover {
     color: #00e676;
+}
+
+/* Make sure slider and text container behave responsively */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;  /* Stack the containers vertically */
+    }
+    .container, .text-container {
+        width: 100%;  /* Full width on smaller screens */
+    }
 }
