@@ -52,8 +52,8 @@ nav{
 main{
     display: grid;
     gap: 1em;
-    grid-template-rows: 60vh 150px 150px 40vh;
-    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr;
     background-color: rgb(255, 255, 255);
 }
 
@@ -91,20 +91,21 @@ main{
 }
 .fashion-shose{
     grid-row: 2/4;
-    flex-wrap: wrap;
-    height: 300px;
 }
 .sport-shoes{
-    height: 150px;
+    
 }
 .stylish-shoes{
-    height: 150px;
+   
 }
 .promotion-buttom{
     grid-row: 4;
     grid-column: 1/3;
-    height: 40vh;
-    width: 100%;
+
+}
+.container{
+    display: flex;
+    align-items: center;
 }
 footer{
     display: flex;
