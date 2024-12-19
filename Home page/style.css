@@ -52,8 +52,8 @@ nav{
 main{
     display: grid;
     gap: 1em;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-columns:auto auto;
     background-color: rgb(255, 255, 255);
 }
 
@@ -86,16 +86,28 @@ main{
     top:350px;
     right: 200px;
 }
-.main-content{
-    
+.main-center-container{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid gray;
+    align-content: center;
 }
-.fashion-shose{
+.fashion-shose-img-container{
     grid-row: 2/4;
 }
-.sport-shoes{
+.fashion-shose-img{
+    flex-wrap: wrap;
+    width: 100%;
+}
+.sport-shoes-img{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 100%;
     
 }
-.stylish-shoes{
+.stylish-shoes-img{
+    flex-wrap: wrap;
+    width: 100%;
    
 }
 .promotion-buttom{
@@ -155,21 +167,16 @@ footer{
     }
 }
 
-body {
-    background-color: #f8fafc;
-  }
-  
-  .container {
+.container {
     padding: 2rem;
-  }
-  
-  .slider-wrapper {
+}
+.slider-wrapper {
     position: relative;
     max-width: 48rem;
     margin: 0 auto;
-  }
-  
-  .slider {
+}
+
+.slider {
     display: flex;
     aspect-ratio: 16 / 9;
     overflow-x: auto;
@@ -179,20 +186,20 @@ body {
     border-radius: 0.5rem;
     -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
     scrollbar-width: none; /* Hide scrollbar Firefox */
-  }
-  
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .slider::-webkit-scrollbar {
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
     display: none;
-  }
-  
-  .slider img {
+}
+
+.slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
-  }
-  
-  .slider-nav {
+}
+
+.slider-nav {
     display: flex;
     column-gap: 1rem;
     position: absolute;
@@ -200,17 +207,17 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-  }
-  
-  .slider-nav a {
+}
+
+.slider-nav a {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
     background-color: #fff;
     opacity: 0.75;
     transition: opacity ease 250ms;
-  }
-  
-  .slider-nav a:hover {
+}
+
+.slider-nav a:hover {
     opacity: 1;
-  }
+}
