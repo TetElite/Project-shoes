@@ -53,7 +53,7 @@ nav {
     transition: all 0.3s ease;
 }
 
-.search-bottom i.material-icons {
+.search-bottom i.material-icon {
     position: absolute;
     left: 10px;
     top: 50%;
@@ -95,7 +95,7 @@ nav {
 .search-bottom{
     display: flex
 }
-.material-icons {
+.material-icon {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
@@ -112,32 +112,10 @@ nav {
     cursor: pointer;
 }
 
-.material-icons:hover {
+.material-icon:hover {
     transform: scale(1.4);
     color: rgb(55, 60, 64);
 }
-
-.nav-right {
-    display: flex;
-    gap: 2em;
-    padding-right: 10px;
-    justify-content: right;
-    align-items: center;
-}
-
-nav {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 40px;
-    border-bottom: 1px solid #e8e1e8;
-}
-
-.nav-left {
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 footer {
@@ -149,7 +127,9 @@ footer {
     gap: 1em;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #C3C7F4;
+    background-color: #0d1b2a;
+    color: #fff;
+    padding: 20px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -167,10 +147,11 @@ footer {
 }
 
 .para-footer {
-    color: #333;
+    color: #fffbfb;
     font-weight: 400;
     cursor: pointer;
     transition: color 0.3s;
+
 }
 
 .para-footer:hover {
