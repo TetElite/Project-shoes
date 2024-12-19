@@ -1,8 +1,17 @@
+:root {
+    --primary-bg: #ffffff;
+    --footer-bg: #0d1b2a;
+    --footer-text: #fffbfb;
+    --hover-color: #00e676;
+    --hover-text-color: #801cc8;
+}
+
 body {
-    background-color: #f8fafc;
+    background-color: var(--primary-bg);
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -10,21 +19,25 @@ nav {
     padding: 0 10px;
     border-bottom: 2px solid #ddd;
 }
+
 .material-icons:hover {
     transform: scale(1.2);
-    color: #00e676;
+    color: var(--hover-color);
 }
+
 .nav-left, .nav-right {
     display: flex;
     align-items: center;
     gap: 1em;
 }
+
 .nav-right a, .material-icons {
     text-decoration: none;
     color: inherit;
     font-size: 25px;
     transition: transform 0.3s, color 0.3s;
 }
+
 footer {
     position: fixed;
     bottom: 0;
@@ -34,9 +47,9 @@ footer {
     gap: 1em;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #0d1b2a;
-    color: #fff;
-    padding: 20px;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 10px 20px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -54,37 +67,42 @@ footer {
 }
 
 .para-footer {
-    color: #fffbfb;
+    color: var(--footer-text);
     font-weight: 400;
     cursor: pointer;
     transition: color 0.3s;
-
 }
 
 .para-footer:hover {
-    color: #801cc8;
+    color: var(--hover-text-color);
 }
 
-/* Adjusting spacing for screens wider than 601px */
 @media screen and (min-width: 601px) {
     main {
         grid-template-columns: auto;
     }
 }
-.container-of-shoes{
+
+.container-of-shoes {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1em;
 }
-.box{
+
+.box {
     background-color: #dbdbe2;
     border: 1px solid #b3abab;
 }
-.container-of-shoes{
-    display: flex ;
-    flex-wrap: wrap;
+.fashion-middle-1 {
+    display: flex;
+    margin: 10px;
+    gap: 100px;
 }
-#f2 img{
-    width: 100px;
+#f11 img{
+    width: auto;
+    height: 170px;
+    margin-right: 50px;
+}
+#f1{
+    margin-left: 50px;
 }
