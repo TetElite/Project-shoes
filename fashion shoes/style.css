@@ -106,3 +106,23 @@ footer {
 #f1{
     margin-left: 50px;
 }
+.container{
+    background-color: #bfb9b9;
+    padding: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-each{
+    background-color: #00e676;
+    width: 100px;
+    border-radius: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container-each1{
+}

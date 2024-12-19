@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #121212;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: #202124;
+  padding: 40px;
+  border-radius: 12px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.google-logo img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-size: 14px;
+  color: #e8eaed;
+  margin-bottom: 30px;
+}
+.sign-in-form .input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border: 1px solid #5f6368;
+  border-radius: 4px;
+  background-color: #303134;
+  color: #e8eaed;
+  font-size: 16px;
+  outline: none;
+}
+.input-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #9aa0a6;
+}
+.input-box input::placeholder {
+  color: #9aa0a6;
+}
+.forgot-email {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  color: #8ab4f8;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.forgot-email:hover {
+  text-decoration: underline;
+}
+.info {
+  font-size: 12px;
+  color: #9aa0a6;
+  margin-bottom: 20px;
+}
+.info .learn-more {
+  color: #8ab4f8;
+  text-decoration: none;
+}
+.info .learn-more:hover {
+  text-decoration: underline;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.create-account {
+  font-size: 14px;
+  color: #8ab4f8;
+  text-decoration: none;
+}
+.create-account:hover {
+  text-decoration: underline;
+}
+.next-btn {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.next-btn:hover {
+  background-color: #1669c1;
+}
