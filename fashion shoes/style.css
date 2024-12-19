@@ -19,10 +19,72 @@ nav {
     align-items: center;
     gap: 1em;
 }
-
 .nav-right a, .material-icons {
     text-decoration: none;
     color: inherit;
     font-size: 25px;
     transition: transform 0.3s, color 0.3s;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #0d1b2a;
+    color: #fff;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.item {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    width: 200px;
+}
+
+.item h2 {
+    font-weight: 500;
+    color: #1a1717;
+    margin-bottom: 10px;
+}
+
+.para-footer {
+    color: #fffbfb;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.3s;
+
+}
+
+.para-footer:hover {
+    color: #801cc8;
+}
+
+/* Adjusting spacing for screens wider than 601px */
+@media screen and (min-width: 601px) {
+    main {
+        grid-template-columns: auto;
+    }
+}
+.container-of-shoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1em;
+}
+.box{
+    background-color: #dbdbe2;
+    border: 1px solid #b3abab;
+}
+.container-of-shoes{
+    display: flex ;
+    flex-wrap: wrap;
+}
+#f2 img{
+    width: 100px;
 }
