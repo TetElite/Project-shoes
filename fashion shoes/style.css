@@ -101,28 +101,53 @@ footer {
 #f11 img{
     width: auto;
     height: 170px;
-    margin-right: 50px;
+    display: flex;
+    justify-self: flex-end;
 }
 #f1{
     margin-left: 50px;
 }
 .container{
-    background-color: #bfb9b9;
-    padding: 90px;
+    background-color: #a7a2a2;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .container-each{
-    background-color: #00e676;
-    width: 100px;
+    background-color: #6e6969;
     border-radius: 20px;
-    height: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    color: white;
+    font-size:20px;
+    margin: 10px;
 }
-#container-each1{
+#each11 img, #each22 img, #each33 img, #each44 img {
+    border: 5px solid #e8e5e5; /* Solid border */
+    border-radius: 50px;       /* Rounded corners */
+    box-shadow: 2px 2px 8px rgba(230, 219, 219, 0.5); /* Shadow effect */
+    width: 200px;
+    margin: 10px;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+#each11 img:hover, #each22 img:hover, #each33 img:hover, #each44 img:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+#container-each1, #container-each2, #container-each3, #container-each4 {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space elements evenly */
+    margin: 10px; /* Add some space around the container */
+    color: white;
+    margin-right: 20px
+}
+
+#each11, #each22, #each33, #each44 {
+    cursor: pointer;
+    margin: auto;
 }
