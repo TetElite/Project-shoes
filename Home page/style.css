@@ -75,10 +75,7 @@ main{
 .h2{
     bottom: 8px;
     right: 16px;
-    top: none;
-    position: absolute;
-
-    
+    position: absolute;   
 }
 .promotion-ads{
     grid-column: 1/3;
@@ -118,6 +115,7 @@ main{
     display: flex;
     border-radius: 10px;
     align-content: center;
+    position: relative;
 }
 .fashion-shose-img-container{
     grid-row: 2/4;
@@ -127,16 +125,25 @@ main{
     width: 100%;
     height: 100%;
 }
+.text-on-catagory{
+    color: aliceblue;
+    position: absolute;
+}
 .sport-shoes-img{
     flex-grow: 1;
     flex-wrap: wrap;
     width: 100%;
-    height: 100%;  
+    height: 100%;
+    position: relative;  
+}
+.stylish-style{
+    
 }
 .stylish-shoes-img{
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
+    position: relative;
    
 }
 .promotion-buttom{
@@ -198,6 +205,10 @@ footer{
     main{ 
         grid-template-columns: auto;
     }
+    .background-image-promotion{
+        height: 80vh;
+    }
+    
 }
 
 .container {
