@@ -5,7 +5,6 @@
     --hover-color: #00e676;
     --hover-text-color: #801cc8;
 }
-
 body {
     background-color: var(--primary-bg);
     margin: 0;
@@ -107,47 +106,74 @@ footer {
 #f1{
     margin-left: 50px;
 }
-.container{
+
+.container {
     background-color: #a7a2a2;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px auto;
     border-radius: 20px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 10px;
 }
-.container-each{
+
+.container-each {
     background-color: #6e6969;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
-    align-items:center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     color: white;
-    font-size:20px;
+    font-size: 25px;
     margin: 10px;
+    padding: 10px;
+    width: 220px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
+
+.offer-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.promotion-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 #each11 img, #each22 img, #each33 img, #each44 img {
-    border: 5px solid #e8e5e5; /* Solid border */
-    border-radius: 50px;       /* Rounded corners */
-    box-shadow: 2px 2px 8px rgba(230, 219, 219, 0.5); /* Shadow effect */
-    width: 200px;
+    border: 5px solid #e8e5e5;
+    border-radius: 50px;
+    box-shadow: 2px 2px 8px rgba(230, 219, 219, 0.5);
+    width: 180px;
+    height: auto;
     margin: 10px;
-    transition: transform 0.3s ease; /* Smooth scaling effect */
+    transition: transform 0.3s ease;
 }
 
 #each11 img:hover, #each22 img:hover, #each33 img:hover, #each44 img:hover {
-    transform: scale(1.1); /* Increase size on hover */
+    transform: scale(1.1);
 }
 
 #container-each1, #container-each2, #container-each3, #container-each4 {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space elements evenly */
-    margin: 10px; /* Add some space around the container */
-    color: white;
-    margin-right: 20px
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-#each11, #each22, #each33, #each44 {
+.shop-now{
+    border: 1px solid rgb(185, 171, 171);
+    border-radius: 20px;
+    padding:5px;
+    font-size: 17px;
+    background-color: #d7cfcf;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.shop-now:hover{
+    background-color: #b3a9a9;
+    color: white;
     cursor: pointer;
-    margin: auto;
 }
