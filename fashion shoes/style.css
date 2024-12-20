@@ -142,8 +142,15 @@ footer {
     font-size: 16px;
     margin-bottom: 10px;
     text-align: center;
+    font-family:initial;
 }
-
+.promotion{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family:initial;
+}
 #each11 img, #each22 img, #each33 img, #each44 img {
     border: 5px solid #e8e5e5;
     border-radius: 50px;
