@@ -114,7 +114,7 @@ div h2 {
 .btn a {
   text-decoration: none;
   color: inherit;
-  }
+}
 .wrapper .btn:hover {
   background-color: #a6a3a3;
 }
@@ -132,20 +132,15 @@ div h2 {
   font-size: 16px;
   color: #333;
   font-weight: 600;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
   transition: background-color 0.3s ease;
-  width: fit-content;
-  margin: 0 auto;
 }
-
 .google-btn:hover {
   background-color: #a6a3a3;
 }
-
 .google-btn i {
   margin-right: 10px;
 }
-
 .wrapper .register-link {
   font-size: 14.5px;
   text-align: center;
