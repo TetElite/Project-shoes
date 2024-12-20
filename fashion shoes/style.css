@@ -8,9 +8,12 @@
 body {
     background-color: var(--primary-bg);
     margin: 0;
-    font-family: 'Roboto', sans-serif;
 }
+.f1 img {
+    width: 100%;
+    height: auto;
 
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -22,6 +25,7 @@ nav {
 .material-icons:hover {
     transform: scale(1.2);
     color: var(--hover-color);
+    cursor: pointer;
 }
 
 .nav-left, .nav-right {
@@ -92,20 +96,6 @@ footer {
     background-color: #dbdbe2;
     border: 1px solid #b3abab;
 }
-.fashion-middle-1 {
-    display: flex;
-    margin: 10px;
-    gap: 100px;
-}
-#f11 img{
-    width: auto;
-    height: 170px;
-    display: flex;
-    justify-self: flex-end;
-}
-#f1{
-    margin-left: 50px;
-}
 
 .container {
     background-color: #a7a2a2;
@@ -147,7 +137,7 @@ footer {
 .promotion{
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 5px;
+    
     text-align: center;
     font-family:initial;
 }
