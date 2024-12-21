@@ -1,67 +1,133 @@
-body {
-	background: #1B1B1B; 
-}
-.container{
-    padding-top: 8%; 
-}
-.single-content .title{
-    margin: 0;
-    position: absolute;
-    font-size: 20px;
-    color: #fff; 
-}
-.single-content{
-    box-shadow: 0 0 3px rgba(0,0,0,0.3);
-    position: relative;
-    overflow: hidden;
-    height: 400px; 
-}
-.single-content img{
-    width: 100%;
-    height: 400px; 
-}
-.img-text{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom,#09d3f3,#0159e4);
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: perspective(400px) rotateX(-90deg);
-    transform-origin: center top 0;
-    transition: .5s;
-    padding: 40% 0 0;
-    color: #fff;
-    text-align: center; 
-}
-.single-content:hover .img-text{
-    opacity: 1;
-    transform: perspective(400px) rotateX(0); 
-}
-.img-text h2 {
-	font-family: "Bebas Neue", sans-serif;
-}
-.socials i{
-    padding: 0 15px;
-}
-.single-content .title {
-	bottom: 25px;
-	left: 25px;
-	transition: .9s;
-	font-size: 25px;
-	text-transform: uppercase;
-	background: linear-gradient(to top,#fff,transparent);
-	color: #262626;
-	padding: 20px 70px;
-	line-height: 1.5;
-}
-.single-content:hover .title{
-    bottom: -40px; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-@media (max-width: 600px){
-    .single-content{
-        margin-bottom: 30px;
-    }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  flex: 1;
+  padding: 30px;
+  background-color: #f6f6f6;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+.left-section .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.left-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.left-section p {
+  font-size: 14px;
+  color: #555;
+}
+
+.right-section {
+  flex: 2;
+  padding: 40px;
+}
+
+.right-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.right-section p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-box input:focus {
+  border-color: #4285f4;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.options label {
+  font-size: 14px;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skip-btn {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.save-btn {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+  background-color: #306fcf;
 }

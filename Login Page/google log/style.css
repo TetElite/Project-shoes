@@ -12,6 +12,22 @@ body {
   align-items: center;
   height: 100vh;
 }
+.home-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+  transition: background-color 0.9s ease;
+}
 .container {
   background-color: #202124;
   padding: 40px;

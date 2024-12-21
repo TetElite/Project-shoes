@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(bg2.jpg) no-repeat;
+  background: url(photo/pexels-zen-chung-5537487.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -28,6 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: background 0.3s ease;
+  transition: background-color 0.9s ease;
 }
 .home-icon:hover {
   background: rgba(255, 255, 255, 0.8);
@@ -58,6 +59,10 @@ div h2 {
   width: 100%;
   height: 50px;
   margin: 30px 0;
+}
+.wrapper a {
+  text-decoration: none;
+  color: inherit;
 }
 .input-box input {
   width: 100%;
@@ -110,6 +115,7 @@ div h2 {
   font-size: 16px;
   color: #333;
   font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 .btn a {
   text-decoration: none;
@@ -134,6 +140,7 @@ div h2 {
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  background: #4285f4;
 }
 .google-btn:hover {
   background-color: #a6a3a3;
