@@ -64,6 +64,17 @@ div h2 {
   text-decoration: none;
   color: inherit;
 }
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Space between the fields */
+}
+.input-row .input-box {
+  flex: 1; /* Makes both fields take equal width */
+}
+.input-row .input-box input {
+  width: 100%; /* Ensures the input fills the container */
+}
 .input-box input {
   width: 100%;
   height: 100%;
