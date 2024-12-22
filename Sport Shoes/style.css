@@ -3,21 +3,21 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-}
-
-body {
+  }
+  
+  body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: 100vw; /* Full viewport width */
     min-height: 100vh;
-}
-.Sport-div {
+  }
+  .Sport-div {
     margin: 0;
     padding: 0;
     width: 100vw; /* Full viewport width */
-}
-nav {
+  }
+  nav {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -26,29 +26,29 @@ nav {
     align-items: center;
     padding: 0 10px;
     border-bottom: 2px solid #ddd;
-}
-
-.nav-left, .nav-right {
+  }
+  
+  .nav-left, .nav-right {
     display: flex;
     align-items: center;
     gap: 1em;
-}
-
-.nav-right a, .material-icons {
+  }
+  
+  .nav-right a, .material-icons {
     margin-right: 1em;
     text-decoration: none;
     color: inherit;
     font-size: 25px;
     transition: transform 0.3s, color 0.3s;
-}
-
-.material-icons:hover {
+  }
+  
+  .material-icons:hover {
     cursor: pointer;
     transform: scale(1.2);
     color: #00e676;
-}
-
-.row{
+  }
+  
+  .row{
     width: 80%;
     max-width: 1170px;
     display: grid;
@@ -57,8 +57,8 @@ nav {
     overflow-x: hidden;
     padding: 5rem 0;
     margin: 0 auto;
-}
-.main {
+  }
+  .main {
     width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
     background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(photo/pexels-maksgelatin-4775192.jpg);
@@ -68,32 +68,32 @@ nav {
     display: flex;
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
-}
-.content{
+  }
+  .content{
     width: 1200px;
     height: auto;
     margin: auto;
     color: #fff;
     position: relative;
-}
-
-.content .par{
+  }
+  
+  .content .par{
     padding-left: 20px;
     padding-bottom: 25px;
     font-family: Arial;
     letter-spacing: 1.2px;
     line-height: 30px;
-}
-
-.content h1{
+  }
+  
+  .content h1{
     font-family: 'Times New Roman';
     font-size: 50px;
     padding-left: 20px;
     margin-top: 9%;
     letter-spacing: 2px;
-}
-
-.content .cn{
+  }
+  
+  .content .cn{
     width: 160px;
     height: 40px;
     background: #ff7200;
@@ -105,73 +105,73 @@ nav {
     cursor: pointer;
     transition: .4s ease;
     
-}
-
-.content .cn a{
+  }
+  
+  .content .cn a{
     text-decoration: none;
     color: #000;
     transition: .3s ease;
-}
-
-.cn:hover{
+  }
+  
+  .cn:hover{
     background-color: #fff;
-}
-
-.content span{
+  }
+  
+  .content span{
     color: #ff7200;
     font-size: 65px
-}
-
-img, .row, .contentWrapper {
+  }
+  
+  img, .row, .contentWrapper {
     max-width: 100%;
-}
-nav, footer {
+  }
+  nav, footer {
     width: 100vw; /* Full width */
-}
-.row {
+  }
+  .row {
     display: flex;
     align-items: center; /* Align image and text vertically */
     justify-content: space-between; /* Add space between image and text */
     gap: 20px; /* Add space between columns */
-}
-.row.imgWrapper{
+  }
+  .row.imgWrapper{
     overflow: hidden;
-}
-.row.imgWrapper img{
+  }
+  .row.imgWrapper img{
     width: 100%;
     height: auto;
     object-fit: cover;
     margin: 0 auto; /* Center the image horizontally */
     display: block;
-}
-.imgWrapper img:hover{
+  }
+  .imgWrapper img:hover{
     cursor: pointer;
     transition: transform 0.5s;
     transform: scale(1.1); /* Adjust the scale value as needed */
-}
-.row.contentWrapper{
+  }
+  .row.contentWrapper{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 30px;
-}
-.content1{
+  }
+  .content1{
     margin-left: 50px;
     word-spacing: 5px;
-}
-.content1 span {
+  }
+  .content1 span {
     margin-bottom: 50px; /* Adjust the value as needed for vertical spacing */
-}
-.content1 h2 {
+  }
+  .content1 h2 {
     margin-bottom: 20px; /* Adjust the value as needed for vertical spacing */
-}
-
-.content1 p {
+  }
+  
+  .content1 p {
     margin-bottom: 15px; /* Adjust the value as needed for vertical spacing */
-}
-
-.content1 a {
+  }
+  
+  .content1 a {
     margin-bottom: 20px; /* Adjust the value as needed for vertical spacing */
     display: inline-block; /* Ensure the margin applies correctly */
     display: inline-block;
@@ -188,24 +188,24 @@ nav, footer {
     color: white; /* Ensure the text color is visible */
     text-align: center; /* Center the text horizontally */
     line-height: 40px;
-}
-.content1 a:hover {
+  }
+  .content1 a:hover {
     background-color: #686363;
     color: #000;
-}
-.textwrapper span{
+  }
+  .textwrapper span{
     font-size: 2.5rem;
     color: #f74803;
     font-weight: bold;
     
-}
-.size-buttons {
+  }
+  .size-buttons {
     margin-top: 20px; /* Add space between the text and buttons */
     display: flex; /* Arrange buttons in a row */
     gap: 10px; /* Add spacing between buttons */
     justify-content: flex-start;
-}
-.size-buttons button {
+  }
+  .size-buttons button {
     padding: 5px 10px; /* Adjust size of the button */
     font-size: 14px; /* Smaller text */
     border: 1px solid #ddd; /* Light border */
@@ -213,20 +213,20 @@ nav, footer {
     background-color: #f0f0f0; /* Light background */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-}
-.size-buttons button:hover {
+  }
+  .size-buttons button:hover {
     background-color: #00e676; /* Change background on hover */
     color: white;
     transform: scale(1.1); /* Slightly enlarge button on hover */
-}
-.size-buttons button:focus {
+  }
+  .size-buttons button:focus {
     background-color: #00e676; /* Highlighted background for active button */
     color: white; /* White text for active button */
     transform: scale(1.1); /* Slightly enlarged button */
     border: 1px solid #00e676;
     outline: none; /* Remove the default focus outline */
-}
-footer {
+  }
+  footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -235,28 +235,123 @@ footer {
     background-color: #0d1b2a;
     color: #fff;
     padding: 20px;
-}
-
-.item {
+  }
+  
+  .item {
     flex: 1;
     min-width: 200px;
     margin: 10px;
-}
-
-.item h2 {
+  }
+  
+  .item h2 {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: 600;
     color: #fff;
-}
-
-.para-footer {
+  }
+  
+  .para-footer {
     color: #ccc;
     margin-bottom: 8px;
     font-size: 14px;
     transition: color 0.3s;
-}
-
-.para-footer:hover {
+  }
+  
+  .para-footer:hover {
     color: #00e676;
-}
+  }
+  @media screen and (min-width: 601px) {
+    main {
+        grid-template-columns: auto;
+    }
+  }
+  
+  .container-of-shoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
+  }
+  
+  .box {
+    background-color: #dbdbe2;
+    border: 1px solid #b3abab;
+  }
+  .container {
+    background-color: #a7a2a2;
+    margin: 20px auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .container-each {
+    background-color: #6e6969;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    width: 220px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .offer-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .promotion-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family:initial;
+  }
+  .promotion{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 50px;
+    margin-top:10px;
+    text-align: center;
+    font-family:initial;
+  }
+  #each11 img, #each22 img, #each33 img, #each44 img {
+    border: 5px solid #e8e5e5;
+    border-radius: 50px;
+    box-shadow: 2px 2px 8px rgba(230, 219, 219, 0.5);
+    width: 180px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  #each11 img:hover, #each22 img:hover, #each33 img:hover, #each44 img:hover {
+    transform: scale(1.1);
+  }
+  
+  #container-each1, #container-each2, #container-each3, #container-each4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .shop-now{
+    border: 1px solid rgb(185, 171, 171);
+    border-radius: 20px;
+    padding:5px;
+    font-size: 17px;
+    background-color: #d7cfcf;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .shop-now:hover{
+    background-color: #b3a9a9;
+    color: white;
+    cursor: pointer;
+  }

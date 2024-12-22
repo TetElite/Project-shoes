@@ -23,7 +23,8 @@ body{
 }
 .material-icons:hover{
     transform: scale(1.2);
-    color: aliceblue;
+    cursor: pointer;
+
 }
 
 .img-header{
@@ -51,7 +52,7 @@ nav{
 }
 main{
     display: grid;
-    gap: 1em;
+    gap: 2em;
     grid-template-rows: 1fr auto auto auto auto auto;
     grid-template-columns:auto auto;
     background-color: rgb(255, 255, 255);
@@ -80,7 +81,6 @@ main{
 }
 .promotion-ads{
     grid-column: 1/3;
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -202,6 +202,9 @@ footer{
 .para-footer{
     color: white;
     cursor: pointer;
+}
+.para-footer:hover{
+    text-decoration: underline;
 }
 .item-2{
     color: #a41d1d;
