@@ -1,19 +1,21 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body{
+
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(bg2.jpg) no-repeat;
+  background: url(photo/pexels-zen-chung-5537487.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .home-icon {
   position: absolute;
   top: 20px;
@@ -28,6 +30,7 @@ body{
   justify-content: center;
   align-items: center;
   transition: background 0.3s ease;
+  transition: background-color 0.9s ease;
 }
 
 .home-icon:hover {
@@ -35,75 +38,95 @@ body{
   color: black;
 }
 
-div h2{
+div h2 {
   color: white;
-  text-align: center; /* Center the text */
+  text-align: center;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-.wrapper{
+
+.wrapper {
   width: 420px;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(9px);
   color: #fff;
   border-radius: 12px;
   padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add uniform vertical spacing */
 }
-.wrapper h1{
-  font-size: 36px;
+.wrapper h1 {
+  text-align: center;
+  margin-bottom:20px ;
+}
+.wrapper p {
   text-align: center;
 }
-.wrapper .input-box{
+.wrapper a {
+  text-decoration: none;
+  color: inherit;
+}
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Uniform spacing for all elements */
+}
+
+.input-box {
   position: relative;
   width: 100%;
   height: 50px;
-  
-  margin: 30px 0;
 }
-.input-box input{
+
+.input-box input {
   width: 100%;
   height: 100%;
   background: transparent;
   border: none;
   outline: none;
-  border: 2px solid rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 40px;
   font-size: 16px;
   color: #fff;
   padding: 20px 45px 20px 20px;
 }
-.input-box input::placeholder{
+
+.input-box input::placeholder {
   color: #fff;
 }
-.input-box i{
+
+.input-box i {
   position: absolute;
   right: 20px;
-  top: 30%;
-  transform: translate(-50%);
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 20px;
-
 }
-.wrapper .remember-forgot{
+
+.remember-forgot {
   display: flex;
   justify-content: space-between;
   font-size: 14.5px;
-  margin: -15px 0 15px;
 }
-.remember-forgot label input{
+
+.remember-forgot label input {
   accent-color: #fff;
   margin-right: 3px;
-
 }
-.remember-forgot a{
+
+.remember-forgot a {
   color: #fff;
   text-decoration: none;
-
 }
-.remember-forgot a:hover{
+
+.remember-forgot a:hover {
   text-decoration: underline;
 }
-.wrapper .btn {
+
+.btn,
+.google-btn {
   width: 100%;
   height: 45px;
   background: #fff;
@@ -115,46 +138,37 @@ div h2{
   font-size: 16px;
   color: #333;
   font-weight: 600;
-}
-.btn a {
-  text-decoration: none;
-  color: inherit;
-  }
-.wrapper .btn:hover {
-  background-color: #a6a3a3;
-}
-.google-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 45px;
-  background: #fff;
-  border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  color: #333;
-  font-weight: 600;
-  text-decoration: none; /* Remove underline */
   transition: background-color 0.3s ease;
-  width: fit-content;
-  margin: 0 auto;
 }
 
+.btn:hover,
 .google-btn:hover {
   background-color: #a6a3a3;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4285f4;
+  transition: background-color 0.3s ease;
 }
 
 .google-btn i {
   margin-right: 10px;
 }
-.register-link p a{
+
+.register-link p {
+  text-align: center;
+  margin: 0;
+}
+
+.register-link p a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
 }
-.register-link p a:hover{
+
+.register-link p a:hover {
   text-decoration: underline;
 }
