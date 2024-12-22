@@ -96,7 +96,6 @@ footer {
     background-color: #dbdbe2;
     border: 1px solid #b3abab;
 }
-
 .container {
     background-color: #a7a2a2;
     margin: 20px auto;
@@ -135,9 +134,11 @@ footer {
     font-family:initial;
 }
 .promotion{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
-    
+    margin: 0;
+    margin-bottom: 50px;
+    margin-top:10px;
     text-align: center;
     font-family:initial;
 }
@@ -173,4 +174,13 @@ footer {
     background-color: #b3a9a9;
     color: white;
     cursor: pointer;
+}
+.new-arrival{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top:30px;
+    text-align: center;
+    font-family:initial;
 }
