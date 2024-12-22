@@ -137,7 +137,9 @@ footer {
 .promotion{
     font-size: 30px;
     font-weight: bold;
-    
+    margin: 0;
+    margin-bottom: 50px;
+    margin-top:10px;
     text-align: center;
     font-family:initial;
 }
