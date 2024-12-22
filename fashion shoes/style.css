@@ -85,16 +85,14 @@ footer {
         grid-template-columns: auto;
     }
 }
-
 .container-of-shoes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1em;
 }
-
 .box {
     background-color: #dbdbe2;
-    border: 1px solid #b3abab;
+    border: 7px solid #b3abab;
 }
 .container {
     background-color: #a7a2a2;
@@ -183,4 +181,32 @@ footer {
     margin-top:30px;
     text-align: center;
     font-family:initial;
+}
+.box-element{
+    background-color: #f4e7fb;
+    margin: 20px auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.box-element-each{
+    background-color: #c3c7f4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(15, 13, 13);
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    width: 220px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+#box-element-each-1 , #box-element-each-2 , #box-element-each-3 , #box-element-each-4, #box-element-each-5, #box-element-each-6, #box-element-each-7, #box-element-each-8,#box-element-each-9, #box-element-each-10, #box-element-each-11, #box-element-each-12 ,#box-element-each-13, #box-element-each-14, #box-element-each-15{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
