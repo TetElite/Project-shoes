@@ -245,13 +245,14 @@
   
   .item h2 {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 1.5 rem;
     font-weight: 600;
-    color: #fff;
+    color: #ff0000;
   }
   
   .para-footer {
-    color: #ccc;
+    font-weight: bold;
+    color: #ffffff;
     margin-bottom: 8px;
     font-size: 14px;
     transition: color 0.3s;
@@ -259,6 +260,7 @@
   
   .para-footer:hover {
     color: #00e676;
+    cursor: pointer;
   }
   @media screen and (min-width: 601px) {
     main {
