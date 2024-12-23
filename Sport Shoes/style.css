@@ -12,11 +12,6 @@
     width: 100vw; /* Full viewport width */
     min-height: 100vh;
   }
-  .Sport-div {
-    margin: 0;
-    padding: 0;
-    width: 100vw; /* Full viewport width */
-  }
   nav {
     margin: 0;
     padding: 0;
@@ -96,7 +91,7 @@
   .content .cn{
     width: 160px;
     height: 40px;
-    background: #ff7200;
+    background: #46dfb1;
     border: none;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -111,6 +106,11 @@
     text-decoration: none;
     color: #000;
     transition: .3s ease;
+    display: inline-block; /* Ensure the link behaves like a block element */
+    width: 100%; /* Make the link take the full width of the button */
+    height: 100%; /* Make the link take the full height of the button */
+    text-align: center; /* Center the text horizontally */
+    line-height: 40px;
   }
   
   .cn:hover{
@@ -118,7 +118,7 @@
   }
   
   .content span{
-    color: #ff7200;
+    color: #8dee98;
     font-size: 65px
   }
   
@@ -134,6 +134,94 @@
     justify-content: space-between; /* Add space between image and text */
     gap: 20px; /* Add space between columns */
   }
+  .wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(9px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add uniform vertical spacing */
+}
+
+.wrapper h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper p {
+    text-align: center;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: inherit;
+}
+.form-elements {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row {
+      grid-template-columns: 1fr; /* Single column layout for smaller screens */
+      padding: 2rem 0;
+  }
+
+  .content {
+      width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .wrapper {
+      width: 90%; /* Adjust width for smaller screens */
+      padding: 20px;
+  }
+
+  .content h1 {
+      font-size: 36px; /* Adjust font size for smaller screens */
+  }
+  .content .cn {
+    width: 140px; /* Adjust button size for smaller screens */
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+  }
+  .main {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 2rem 0; /* Add padding for smaller screens */
+  }
+}
+@media (max-width: 480px) {
+  nav {
+    padding: 10px;
+  }
+
+  .nav-left, .nav-right {
+    gap: 0.5em;
+  }
+
+  .nav-right a, .material-icons {
+      font-size: 20px; /* Adjust icon size for smaller screens */
+  }
+  .content h1 {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .content .cn {
+    width: 120px; /* Adjust button size for smaller screens */
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .main {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 1rem 0; /* Add padding for smaller screens */
+  }
+}
   .row.imgWrapper{
     overflow: hidden;
   }
@@ -177,7 +265,7 @@
     display: inline-block;
     width: 160px;
     height: 40px;
-    background: #ff7200;
+    background: #15919b;
     border: none;
     margin-bottom: 10px;
     font-size: 18px;
@@ -195,7 +283,7 @@
   }
   .textwrapper span{
     font-size: 2.5rem;
-    color: #f74803;
+    color: #09d1c7;
     font-weight: bold;
     
   }
@@ -245,13 +333,14 @@
   
   .item h2 {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 1.5 rem;
     font-weight: 600;
-    color: #fff;
+    color: #ff0000;
   }
   
   .para-footer {
-    color: #ccc;
+    font-weight: bold;
+    color: #ffffff;
     margin-bottom: 8px;
     font-size: 14px;
     transition: color 0.3s;
@@ -259,12 +348,9 @@
   
   .para-footer:hover {
     color: #00e676;
+    cursor: pointer;
   }
-  @media screen and (min-width: 601px) {
-    main {
-        grid-template-columns: auto;
-    }
-  }
+
   
   .container-of-shoes {
     display: grid;
@@ -272,12 +358,8 @@
     gap: 1em;
   }
   
-  .box {
-    background-color: #dbdbe2;
-    border: 1px solid #b3abab;
-  }
   .container {
-    background-color: #a7a2a2;
+    background-color: #108ab1;
     margin: 20px auto;
     border-radius: 20px;
     display: flex;
@@ -287,7 +369,7 @@
   }
   
   .container-each {
-    background-color: #6e6969;
+    background-color: #073a4b;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -323,7 +405,7 @@
     font-family:initial;
   }
   #each11 img, #each22 img, #each33 img, #each44 img {
-    border: 5px solid #e8e5e5;
+    border: 5px solid #213a58;
     border-radius: 50px;
     box-shadow: 2px 2px 8px rgba(230, 219, 219, 0.5);
     width: 180px;
@@ -346,7 +428,7 @@
     border-radius: 20px;
     padding:5px;
     font-size: 17px;
-    background-color: #d7cfcf;
+    background-color: #15919b;
     color: black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
