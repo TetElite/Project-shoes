@@ -183,30 +183,57 @@ footer {
     font-family:initial;
 }
 .box-element{
-    background-color: #f4e7fb;
+    background-color: #2c3fac;;
     margin: 20px auto;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 10px;
 }
 .box-element-each{
-    background-color: #c3c7f4;
-    border-radius: 20px;
+    background-color: #060917;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    color: rgb(15, 13, 13);
+    color: rgb(239, 18, 18);
     font-size: 25px;
     margin: 10px;
     padding: 10px;
     width: 220px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: calc(20% - 20px);
 }
 #box-element-each-1 , #box-element-each-2 , #box-element-each-3 , #box-element-each-4, #box-element-each-5, #box-element-each-6, #box-element-each-7, #box-element-each-8,#box-element-each-9, #box-element-each-10, #box-element-each-11, #box-element-each-12 ,#box-element-each-13, #box-element-each-14, #box-element-each-15{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#box11, #box22, #box33, #box44, #box55, #box66, #box77, #box88, #box99, #box110, #box111, #box112, #box113, #box114, #box115{
+    border:  solid #70758f;;
+    border-radius: 50px;
+    box-shadow: 2px 2px 8px rgba(230, 226, 226, 0.5);
+    width: 180px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+#box11 img, #box22 img, #box33 img, #box44 img, #box55 img, #box66 img, #box77 img, #box88 img, #box99 img, #box110 img, #box111 img, #box112 img, #box113 img, #box114 img, #box115 img{
+    border: 5px solid #e8e5e5;
+    border-radius: 50px;
+    box-shadow: 2px 2px 8px rgba(230, 219, 219, 0.5);
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+@media (max-width: 768px) {
+    .box-element-each {
+        width: calc(50% - 20px); 
+    }
+}
+@media (max-width: 480px) {
+    .box-element-each {
+        width: 100%;
+    }
 }
