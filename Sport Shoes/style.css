@@ -130,13 +130,14 @@ body {
 }
 
 .content .cn {
-  width: 160px;
-  height: 40px;
+  width: 140px;
+  height: 35px;
+  font-size: 16px;
+  line-height: 35px;
   background: #46dfb1;
   border: none;
   margin-bottom: 10px;
   margin-left: 20px;
-  font-size: 18px;
   border-radius: 10px;
   cursor: pointer;
   transition: .4s ease;
@@ -167,10 +168,10 @@ body {
   width: 80%;
   max-width: 1170px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 50px;
   overflow-x: hidden;
-  padding: 5rem 0;
+  padding: 2rem 0;
   margin: 0 auto;
 }
 
@@ -275,7 +276,7 @@ img, .row, .contentWrapper {
     width: 100%;
   }
   #navbar li a {
-    font-size: 14px;
+    font-size: 12px;
     width: 100%;
     display: block;
   }
@@ -464,7 +465,7 @@ img, .row, .contentWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .content1 {
@@ -704,8 +705,8 @@ footer {
 }
 
 .slider .content2 img {
-  width: 300px;
-  margin-right: 20px;
+  width: 200px;
+  margin-right: 10px;
 }
 
 .slider .content2 img:hover {
@@ -724,12 +725,12 @@ footer {
 }
 
 .slider .text h1 {
-  font-size: 24px;
+  font-size: 20px;
   margin: 0 0 10px;
 }
 
 .slider .text p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
