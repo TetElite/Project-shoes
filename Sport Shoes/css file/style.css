@@ -1,0 +1,27 @@
+/* Slider Button */
+.slider .cn {
+  width: 160px;
+  height: 40px;
+  background: #46dfb1;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.slider .cn a {
+  text-decoration: none;
+  color: #000;
+  transition: .3s ease;
+  display: inline-block; /* Ensure the link behaves like a block element */
+  width: 100%; /* Make the link take the full width of the button */
+  height: 100%; /* Make the link take the full height of the button */
+  text-align: center; /* Center the text horizontally */
+  line-height: 40px;
+}
+
+.slider .cn:hover {
+  background-color: #fff;
+}
