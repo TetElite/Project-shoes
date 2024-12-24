@@ -374,7 +374,7 @@ footer{
     gap: 1em;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: rgb(17, 40, 76);
+    background-color: rgb(73, 87, 111);
 }
 .item{
     display: flex;
