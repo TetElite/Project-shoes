@@ -22,28 +22,6 @@ h1 {
     color: #222;
 }
 
-h2 {
-    font-size: 46px;
-    line-height: 54px;
-    color: #222;
-}
-
-h4 {
-    font-size: 20px;
-    color: #222;
-}
-
-h6 {
-    font-weight: 700;
-    font-size: 12x;
-}
-
-p {
-    font-size: 16px;
-    color: #465b52;
-    margin: 15px 0 20px 0;
-}
-
 .section-p1 {
     padding: 40px 80px;
 }
@@ -374,13 +352,14 @@ footer{
     gap: 1em;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: rgb(73, 87, 111);
+    background-color:#0D1B2B;
 }
 .item{
     display: flex;
     gap: 1em;
     flex-direction: column;
     width: 200px;
+    padding-top: 10px;
 }
 .para-footer{
     color: white;
