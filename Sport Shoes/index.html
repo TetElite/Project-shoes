@@ -11,18 +11,21 @@
     <link rel="stylesheet" href="/Sport Shoes/css file/style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-left">
-            <i class="material-icons">menu</i>
-            <h2>welcome</h2>
+    <section id="header">
+        <a style="text-decoration: none; font-weight: lighter; font-style: italic; font-family: 'Times New Roman', Times, serif;" href="#"><h1 style="font-family: 'Times New Roman', Times, serif;">Welcome</h1></a>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag" style="font-size: 20px;"></i></a>
+            <i id="bar" class="material-icons" style="font-size: 20px;">menu</i>
         </div>
-        <div class="nav-right">
-            <a href="http://127.0.0.1:5501/Home%20page/index.html" class="material-icons">home</a>
-            <i class="material-icons">shopping_cart_checkout</i>
-            <i class="material-icons">notifications_none</i>
-            <a href="http://127.0.0.1:5501/Login%20Page/index.html" class="material-icons">person</a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html"><i class="material-icons" style="font-size: 20px;">home</i> HOME</a></li>
+                <li><a href="shop.html"><i class="material-icons" style="font-size: 20px;">shopping_cart_checkout</i> ADD TO CART</a></li>
+                <li><a href="blog.html"><i class="material-icons" style="font-size: 20px;">notifications_none</i> NOTIFICATION</a></li>
+                <li><a href="about.html"><i class="material-icons" style="font-size: 20px;">person</i> SIGN IN</a></li>
+            </ul>
         </div>
-    </nav>
+    </section>
     <section>
         <div class="main">
             <div class="content">
@@ -381,6 +384,27 @@
 
             // Update slider position
             sliderWrapper.style.transform = `translateX(-${currentIndex2 * cardWidth}px)`;
+        }
+    </script>
+    <script>
+        const bar = document.getElementById('bar');
+        const navbar = document.getElementById('navbar');
+        const close = document.getElementById('close');
+
+        if (bar) {
+            bar.addEventListener('click', () => {
+                if (navbar.style.display === 'flex') {
+                    navbar.style.display = 'none';
+                } else {
+                    navbar.style.display = 'flex';
+                }
+            });
+        }
+
+        if (close) {
+            close.addEventListener('click', () => {
+                navbar.style.display = 'none';
+            });
         }
     </script>
 </body>

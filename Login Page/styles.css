@@ -109,6 +109,7 @@ div h2 {
   display: flex;
   justify-content: space-between;
   font-size: 14.5px;
+  align-items: center; /* Align items vertically */
 }
 
 .remember-forgot label input {
@@ -119,6 +120,7 @@ div h2 {
 .remember-forgot a {
   color: #fff;
   text-decoration: none;
+  margin-left: auto; /* Align to the end */
 }
 
 .remember-forgot a:hover {
@@ -171,4 +173,63 @@ div h2 {
 
 .register-link p a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+    padding: 25px;
+  }
+  .wrapper h1 {
+    font-size: 32px;
+  }
+  .btn, .google-btn {
+    height: 42px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+  .wrapper {
+    width: 100%;
+    padding: 20px;
+  }
+  .home-icon {
+    font-size: 20px;
+    padding: 8px;
+  }
+  .wrapper h1 {
+    font-size: 28px;
+  }
+  .btn, .google-btn {
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+    padding: 15px;
+  }
+  .wrapper h1 {
+    font-size: 24px;
+  }
+  .input-box input {
+    padding: 15px 35px 15px 15px;
+  }
+  .input-box i {
+    font-size: 18px;
+  }
+  .btn, .google-btn {
+    height: 35px;
+    font-size: 12px;
+  }
+  .home-icon {
+    font-size: 18px;
+    padding: 6px;
+  }
 }

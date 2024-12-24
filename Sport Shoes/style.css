@@ -26,35 +26,70 @@ body {
   font-family:initial;
 }
 /* Nav */
-nav {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+#header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
-  border-bottom: 2px solid #ddd;
+  padding: 20px 80px;
+  background: #E3E6F3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
 }
 
-.nav-left, .nav-right {
+#navbar {
   display: flex;
   align-items: center;
-  gap: 1em;
+  justify-content: center;
 }
 
-.nav-right a, .material-icons {
-  margin-right: 1em;
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
   text-decoration: none;
-  color: inherit;
-  font-size: 25px;
-  transition: transform 0.3s, color 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease; 
 }
 
-.material-icons:hover {
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#close {
+  display: none;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+  position: absolute;
+  right: 20px; /* Align with the "Welcome" text */
+  top: 20px; /* Align with the "Welcome" text */
+}
+
+#bar {
+  display: none;
+  font-size: 24px;
   cursor: pointer;
-  transform: scale(1.2);
-  color: #00e676;
 }
 
 /* Section */
@@ -223,6 +258,70 @@ img, .row, .contentWrapper {
   .slider .text p {
     font-size: 14px; /* Adjust font size for smaller screens */
   }
+  #header {
+    padding: 10px 20px;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+    position: relative; /* Ensure the mobile menu is positioned correctly */
+  }
+  #navbar {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  #navbar li {
+    padding: 10px 0;
+    width: 100%;
+  }
+  #navbar li a {
+    font-size: 14px;
+    width: 100%;
+    display: block;
+  }
+  #mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #bar {
+    display: block;
+  }
+  .main {
+    height: auto;
+    padding: 1rem 0;
+  }
+  .content h1 {
+    font-size: 28px;
+  }
+  .content .cn {
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .row {
+    display: block;
+    padding: 1rem;
+  }
+  .imgWrapper img {
+    width: 100%;
+    height: auto;
+  }
+  .slider {
+    height: auto;
+    padding: 1rem 0;
+  }
+  .slider .content2 img {
+    width: 150px;
+    margin-right: 5px;
+  }
+  .slider .text h1 {
+    font-size: 18px;
+  }
+  .slider .text p {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -274,6 +373,69 @@ img, .row, .contentWrapper {
   }
   .slider .text p {
     font-size: 12px; /* Adjust font size for smaller screens */
+  }
+  #header {
+    padding: 5px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #navbar {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  #navbar li {
+    padding: 8px 0;
+    width: 100%;
+  }
+  #navbar li a {
+    font-size: 12px;
+    width: 100%;
+    display: block;
+  }
+  #mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #bar {
+    display: block;
+  }
+  .main {
+    height: auto;
+    padding: 0.5rem 0;
+  }
+  .content h1 {
+    font-size: 24px;
+  }
+  .content .cn {
+    width: 100px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .row {
+    display: block;
+    padding: 0.5rem;
+  }
+  .imgWrapper img {
+    width: 100%;
+    height: auto;
+  }
+  .slider {
+    height: auto;
+    padding: 0.5rem 0;
+  }
+  .slider .content2 img {
+    width: 120px;
+    margin-right: 5px;
+  }
+  .slider .text h1 {
+    font-size: 16px;
+  }
+  .slider .text p {
+    font-size: 10px;
   }
 }
 
@@ -842,4 +1004,131 @@ nav {
 .slider .text p {
   font-size: 12px; /* Adjust font size for smaller screens */
 }
+}
+
+@media (max-width: 1024px) {
+  #header {
+      padding: 15px 40px;
+  }
+  #navbar li a {
+      font-size: 14px;
+  }
+  .main {
+      height: auto;
+      padding: 2rem 0;
+  }
+  .content h1 {
+      font-size: 36px;
+  }
+  .content .cn {
+      width: 140px;
+      height: 35px;
+      font-size: 16px;
+      line-height: 35px;
+  }
+  .row {
+      grid-template-columns: 1fr;
+      padding: 2rem 0;
+  }
+  .contentWrapper {
+      padding-left: 20px;
+  }
+  .slider .content2 img {
+      width: 200px;
+      margin-right: 10px;
+  }
+  .slider .text h1 {
+      font-size: 20px;
+  }
+  .slider .text p {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+      padding: 10px 20px;
+  }
+  #navbar li a {
+      font-size: 12px;
+  }
+  .main {
+      height: auto;
+      padding: 1rem 0;
+  }
+  .content h1 {
+      font-size: 28px;
+  }
+  .content .cn {
+      width: 120px;
+      height: 30px;
+      font-size: 14px;
+      line-height: 30px;
+  }
+  .row {
+      display: block;
+      padding: 1rem;
+  }
+  .imgWrapper img {
+      width: 100%;
+      height: auto;
+  }
+  .slider {
+      height: auto;
+      padding: 1rem 0;
+  }
+  .slider .content2 img {
+      width: 150px;
+      margin-right: 5px;
+  }
+  .slider .text h1 {
+      font-size: 18px;
+  }
+  .slider .text p {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+      padding: 5px 10px;
+  }
+  #navbar li a {
+      font-size: 10px;
+  }
+  .main {
+      height: auto;
+      padding: 0.5rem 0;
+  }
+  .content h1 {
+      font-size: 24px;
+  }
+  .content .cn {
+      width: 100px;
+      height: 25px;
+      font-size: 12px;
+      line-height: 25px;
+  }
+  .row {
+      display: block;
+      padding: 0.5rem;
+  }
+  .imgWrapper img {
+      width: 100%;
+      height: auto;
+  }
+  .slider {
+      height: auto;
+      padding: 0.5rem 0;
+  }
+  .slider .content2 img {
+      width: 120px;
+      margin-right: 5px;
+  }
+  .slider .text h1 {
+      font-size: 16px;
+  }
+  .slider .text p {
+      font-size: 10px;
+  }
 }
