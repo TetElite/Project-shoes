@@ -566,3 +566,14 @@ footer{
 
 
 
+
+
+.stylish-shoes-img:hover, .sport-shoes-img:hover, .fashion-shose-img:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.hover_pig:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+
+}
