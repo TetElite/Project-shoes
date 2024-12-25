@@ -27,7 +27,7 @@ footer{
 .main {
     width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
-    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url('Home page/stylish shoes/photo_2024-12-25_22-44-06.jpg');
     background-position: center;
     background-size: cover;
     padding-top: 0; /* Ensure no extra padding pushes it down */
