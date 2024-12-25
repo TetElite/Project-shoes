@@ -13,6 +13,7 @@ body {
   width: 100vw; /* Full viewport width */
   min-height: 100vh;
   font-family: Arial, sans-serif;
+  
   background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
@@ -216,6 +217,12 @@ img, .row, .contentWrapper {
 .form-elements {
   display: flex;
   flex-direction: column;
+}
+
+/* Links */
+a {
+  color: #1a1a1a; /* Set the desired color */
+  text-decoration: none; /* Remove underline */
 }
 
 /* Responsive Design */
