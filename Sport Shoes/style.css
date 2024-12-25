@@ -1140,3 +1140,40 @@ nav {
       font-size: 10px;
   }
 }
+
+/* Footer */
+footer {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #0D1B2B;
+    padding: 20px 0;
+}
+
+.item {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    width: 200px;
+    padding-top: 10px;
+}
+
+.item-2 {
+    color: #a41d1d;
+}
+
+.para-footer {
+    color: white;
+    cursor: pointer;
+}
+
+.para-footer:hover {
+    text-decoration: underline;
+}
+
+.para-footer a {
+    text-decoration: none;
+    color: inherit;
+}
